@@ -1,0 +1,45 @@
+%flex-center
+    +display(flex)
+    +align-items(center)
+    +justify-content(space-between)
+
+header
+    background: black
+    @extend %flex-center
+    
+    .top-nav
+        //background: #ccc
+        min-width: 300px
+        margin-left: 25px
+        @extend %flex-center
+        
+        &-item
+            color: white
+            text-align: center
+            width: 70px
+            background: #464646
+            border-radius: 15px
+            
+        
+    .top-feed
+        background: red
+        width: 425px
+        height: 100%
+        text-align: center
+        
+        &-item
+            +display(inline-block)
+            text-align: center
+                
+            &-logo
+                +display(inline-block)
+                +size(24px)
+                
+            &-info
+                color: white
+                +display(inline-block)
+                float: left
+                
+                
+            
+        
